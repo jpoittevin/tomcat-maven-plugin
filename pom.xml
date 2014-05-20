@@ -817,20 +817,10 @@
 
   <distributionManagement>
     <repository>
-      <id>apache.releases.https</id>
-      <name>Apache Release Distribution Repository</name>
-      <url>${distributionReleaseUrl}</url>
+      <id>nexus</id>
+      <url>http://nexus/content/repositories/releases/</url>
+      <name>Releases</name>
     </repository>
-
-    <snapshotRepository>
-      <id>${distributionIdSnapshots}</id>
-      <name>Apache Development Snapshot Repository</name>
-      <url>${distributionSnapshotsUrl}</url>
-    </snapshotRepository>
-    <site>
-      <id>apache.website</id>
-      <url>${tomcat-maven.siteUrlDeployment}</url>
-    </site>
   </distributionManagement>
 
   <reporting>
